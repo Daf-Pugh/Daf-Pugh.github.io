@@ -1,0 +1,154 @@
+:root{
+    --Title-Color: #dd9206;
+    --Link-Color: #dd9206;
+    --Background-Color: #2f4f4f;
+    --Header-Background-Color: #162525;
+}
+
+body{
+    margin: 0;
+    background: var(--Background-Color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header,footer{
+    margin: 0;
+    background: var(--Header-Background-Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin:0;
+    color: var(--Title-Color);
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+p{
+    color: var(--Title-Color);
+}
+
+
+/* link in header styling */
+.header-links{
+    /* margin: 0; */
+    /* display: flex; */
+}
+.list-of-links{
+    display: flex;
+    margin: 0;
+}
+.li-link{
+    color: var(--Link-Color);
+    display: flex;
+    margin-left: 20px;
+}
+.link{
+    color: var(--Link-Color);
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+/* main styling */
+main{
+    display: flex;
+    align-self: center;
+    /* min-height: 300px; */
+    /* min-width: 300px; */
+    /* margin: auto; */
+    /* background: #fff; */
+}
+
+/* gmaps iframes styling */
+#map {
+    min-height: 60vh;
+    min-width: 60vh;
+    max-width: 90vw;
+    width: 100%;
+    background: var(--Header-Background-Color);
+}
+
+.gmaps-iframe {
+    min-height: 60vh;
+    min-width: 60vh;
+    max-width: 90vw;
+    max-width: 90vw;
+}
+
+.gmaps-iframe-container {
+    padding: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    background: var(--Header-Background-Color);
+}
+
+/* Map controls styling */
+.map-controls {
+    background: var(--Header-Background-Color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.map-controls h2 {
+    color: var(--Title-Color);
+    margin-top: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group button,
+#clearPinsBtn {
+    padding: 10px;
+    border: 2px solid var(--Link-Color);
+    border-radius: 4px;
+    background: #1a3a3a;
+    color: #fff;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: #888;
+}
+
+.input-group button,
+#clearPinsBtn {
+    background: var(--Link-Color);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-group button:hover,
+#clearPinsBtn:hover {
+    background: #ffb84d;
+}
+
+#clearPinsBtn {
+    margin-top: auto;
+}
+
+.interactive-map {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
