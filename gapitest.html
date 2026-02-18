@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM2xclJ94qMUojEnFnIw4CKtdVbrmSIQY" defer></script>
+    <script src="js/gmap.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="link" href="index.html"><h1>Rock Cannons</h1></a>
+        <nav class="header-links">
+            <ul class="list-of-links">
+                <li class="li-link"><a class="link" href="google.html">Google</a></li>
+                <li class="li-link"><a class="link" href="OSM.html">OSM</a></li>
+                <li class="li-link"><a class="link" href="gapitest.html">GAPI Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="interactive-map">
+            <div class="map-controls">
+                <h2>Add a Pin</h2>
+                <div class="input-group">
+                    <input type="number" id="latitude" placeholder="Latitude" step="0.0001" min="-90" max="90">
+                    <input type="number" id="longitude" placeholder="Longitude" step="0.0001" min="-180" max="180">
+                    <input type="text" id="label" placeholder="Label (optional)">
+                    <button id="addPinBtn">Add Pin</button>
+                </div>
+                <button id="clearPinsBtn">Clear All Pins</button>
+            </div>
+            <div id="map" class="gmaps-iframe-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>made by the Java Drinkers (Group 9)</p>
+    </footer>
+</body>
+
+</html>
