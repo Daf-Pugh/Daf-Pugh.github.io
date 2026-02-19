@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.1/proj4.min.js" defer></script>
+    <script src="js/osm.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="link" href="index.html"><h1>Rock Cannons</h1></a>
+        <nav class="header-links">
+            <ul class="list-of-links">
+                <li class="li-link"><a class="link" href="google.html">Google</a></li>
+                <li class="li-link"><a class="link" href="OSM.html">OSM</a></li>
+                <li class="li-link"><a class="link" href="gapitest.html">GAPI Test</a></li>
+                <li class="li-link"><a class="link" href="formTest.html">Form Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="interactive-map">
+            <div class="map-controls">
+                <form>
+                    <h2>User Submission</h2>
+                    <h4>Name of Rock Cannon:<i>Optional</i></h4>
+                    <input type="text" id="cannonName" placeholder="Rock Lee">
+                    <h4>Location of Rock Cannon:<i>Required</i></h4>
+                    <div class="lattIn">
+                        <h4 class="coordsLabel">Latitude</h4>
+                        <input class="coordsIn" type="number" id="cannonLatt" placeholder="52.3456">
+                    </div>
+                    <div class="longIn">
+                        <h4 class="coordsLabel">Longitude</h4>
+                        <input class="coordsIn" type="number" id="cannonLong" placeholder="-3.4567">
+                    </div>
+                    <h4>Hole Count:<i>Optional</i></h4>
+                    <input type="number" id="holeCount" placeholder="5">
+                    <h4>Story:<i>Optional</i></h4>
+                    <input class="storyIn" type="text" id="Lore" placeholder="(a story about the rock cannon)">
+                    </form>
+                </div>
+            <div id="map" class="leaflet-iframe-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>made by the Java Drinkers (Group 9)</p>
+    </footer>
+</body>
+</html>

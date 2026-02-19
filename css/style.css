@@ -1,8 +1,11 @@
 :root{
     --Title-Color: #dd9206;
+    --Unfocused-Color: #816300;
+    --Clicked-Color: #dd9206;
     --Link-Color: #dd9206;
     --Background-Color: #2f4f4f;
     --Header-Background-Color: #162525;
+    --Field-Background-Color: #1a3a3a;
 }
 
 body{
@@ -30,11 +33,42 @@ h1{
     font-variation-settings: "wdth" 100;
 
 }
-p{
+h2,h3,h4,h5,p{
     color: var(--Title-Color);
+    margin-bottom: 10px;
 }
-
-
+/* Latitude & Longitude */
+/* .lattLongIn{} */
+.coordsIn {
+    max-width:7.5ch;
+}
+.coordsLabel{
+    margin: 0;
+}
+.lattIn,.longIn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 100%;
+}
+/* Latitude & Longitude END */
+input{
+    background-color: var(--Field-Background-Color);   
+    color: var(--Title-Color)
+}
+.storyIn{
+    width:98%;
+    height:120px;
+}
+i{
+    color: var(--Unfocused-Color);
+    font-weight: 700;
+    padding-left: 20px;
+    width:auto;
+    text-align: right;
+}
 /* link in header styling */
 .header-links{
     /* margin: 0; */
